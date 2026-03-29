@@ -30,8 +30,8 @@ Tous les détails du projet sont dans le fichier [`01_Projet_ADEME/Presentation_
 
 ## Installation
 
-L'exécution des notebooks nécessite Python 3 (Anaconda recommandé) et quelques bibliothèques :
+L'exécution des notebooks nécessite Python 3 (Anaconda recommandé). Toutes les dépendances sont listées dans le fichier `requirements.txt` et s'installent en une commande :
 
 ```bash
-pip install networkx matplotlib numpy pulp
+pip install -r requirements.txt
 ```
