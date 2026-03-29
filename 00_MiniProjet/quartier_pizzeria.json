@@ -1,0 +1,34 @@
+{
+    "nodes": [
+        "Pizzeria",
+        "Mme_Dupont",
+        "M_Martin",
+        "Famille_Leroy",
+        "Residence_Etudiants",
+        "Bureau_Comptable",
+        "Gymnase",
+        "Mme_Bernard",
+        "Clinique",
+        "M_Petit"
+    ],
+    "edges": [
+        {"source": "Pizzeria", "target": "Mme_Dupont", "weight": 3},
+        {"source": "Pizzeria", "target": "M_Martin", "weight": 5},
+        {"source": "Pizzeria", "target": "Residence_Etudiants", "weight": 7},
+        {"source": "Mme_Dupont", "target": "M_Martin", "weight": 2},
+        {"source": "Mme_Dupont", "target": "Famille_Leroy", "weight": 4},
+        {"source": "M_Martin", "target": "Famille_Leroy", "weight": 3},
+        {"source": "M_Martin", "target": "Bureau_Comptable", "weight": 6},
+        {"source": "Famille_Leroy", "target": "Residence_Etudiants", "weight": 5},
+        {"source": "Famille_Leroy", "target": "Gymnase", "weight": 8},
+        {"source": "Residence_Etudiants", "target": "Bureau_Comptable", "weight": 4},
+        {"source": "Residence_Etudiants", "target": "Mme_Bernard", "weight": 3},
+        {"source": "Bureau_Comptable", "target": "Gymnase", "weight": 2},
+        {"source": "Bureau_Comptable", "target": "Clinique", "weight": 5},
+        {"source": "Gymnase", "target": "Clinique", "weight": 1},
+        {"source": "Gymnase", "target": "M_Petit", "weight": 6},
+        {"source": "Mme_Bernard", "target": "Clinique", "weight": 4},
+        {"source": "Mme_Bernard", "target": "M_Petit", "weight": 7},
+        {"source": "Clinique", "target": "M_Petit", "weight": 2}
+    ]
+}
