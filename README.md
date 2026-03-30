@@ -1,4 +1,4 @@
-# Bloc Recherche Opérationnelle — A3 2025-2026
+# Bloc Recherche Opérationnelle - A3 2025-2026
 
 Ce dépôt rassemble l'ensemble des ressources du bloc Recherche Opérationnelle. Le bloc dure quatre semaines et tourne autour d'un projet fil rouge pour l'ADEME : optimiser des tournées de véhicules sur un réseau routier. Pour y arriver, on monte progressivement en compétences sur la théorie des graphes, la complexité, la programmation linéaire et les métaheuristiques.
 
@@ -12,13 +12,13 @@ Les slides de cours magistral sont dans `00_Slides` au format PDF.
 
 ## Déroulement du bloc
 
-**Semaine 1 — Théorie des graphes** (`02_Boucle_1_Theorie_Graphe`). On apprend à modéliser un réseau sous forme de graphe, à le représenter en mémoire et à le parcourir. Le workshop porte sur les cycles eulériens et le problème des 7 ponts de Königsberg. On implémente l'algorithme de Hierholzer et on découvre la bibliothèque NetworkX.
+**Semaine 1 - Théorie des graphes** (`02_Boucle_1_Theorie_Graphe`). On apprend à modéliser un réseau sous forme de graphe, à le représenter en mémoire et à le parcourir. Le workshop porte sur les cycles eulériens et le problème des 7 ponts de Königsberg. On implémente l'algorithme de Hierholzer et on découvre la bibliothèque NetworkX.
 
-**Semaine 2 — Complexité** (`03_Boucle_2_Complexite`). On comprend pourquoi certains problèmes sont difficiles. Le workshop porte sur les problèmes hamiltoniens et la NP-Complétude. On étudie les classes P, NP, NP-Complet et NP-Difficile, les réductions polynomiales, et on s'entraîne sur des exercices d'analyse de complexité.
+**Semaine 2 - Complexité** (`03_Boucle_2_Complexite`). On comprend pourquoi certains problèmes sont difficiles. Le workshop porte sur les problèmes hamiltoniens et la NP-Complétude. On étudie les classes P, NP, NP-Complet et NP-Difficile, les réductions polynomiales, et on s'entraîne sur des exercices d'analyse de complexité.
 
-**Semaine 3 — Programmation linéaire** (`04_Boucle_3_Programmation_Lineaire`). On apprend à formuler un problème d'optimisation comme un programme linéaire (variables de décision, contraintes, fonction objectif) et à le résoudre avec le solveur PuLP en Python. On passe à la programmation linéaire en nombres entiers et on formule le TSP avec les contraintes MTZ.
+**Semaine 3 - Programmation linéaire** (`04_Boucle_3_Programmation_Lineaire`). On apprend à formuler un problème d'optimisation comme un programme linéaire (variables de décision, contraintes, fonction objectif) et à le résoudre avec le solveur PuLP en Python. On passe à la programmation linéaire en nombres entiers et on formule le TSP avec les contraintes MTZ.
 
-**Semaine 4 — Méthodes de résolution** (`05_Boucle_4_Metaheuristiques`). On explore l'ensemble des stratégies de résolution : méthodes exactes (backtracking, programmation dynamique, force brute), heuristiques gloutonnes, algorithmes probabilistes, et métaheuristiques (algorithmes génétiques, recuit simulé). On applique ces méthodes au Bin Packing Problem.
+**Semaine 4 - Méthodes de résolution** (`05_Boucle_4_Metaheuristiques`). On explore l'ensemble des stratégies de résolution : méthodes exactes (backtracking, programmation dynamique, force brute), heuristiques gloutonnes, algorithmes probabilistes, et métaheuristiques (algorithmes génétiques, recuit simulé). On applique ces méthodes au Bin Packing Problem.
 
 ## Le projet fil rouge ADEME
 
