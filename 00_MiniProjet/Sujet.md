@@ -22,7 +22,7 @@ Le plan du quartier est fourni dans le fichier `quartier_pizzeria.json`.
 ### Etape 1 : Preparation
 
 - Installez Python et la librairie NetworkX : `pip install networkx`.
-- Creez un fichier Python principal (ex : `mini_projet_pizzas.py`).
+- Remplissez le fichier `Squelette.py` avec les fonctions à realiser pour chaque algorithme. Les signatures des fonctions sont deja definies, il vous suffit de les implementer.
 
 ### Etape 2 : Modelisation du Graphe
 
