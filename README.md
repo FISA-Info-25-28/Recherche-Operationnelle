@@ -35,3 +35,7 @@ L'exécution des notebooks nécessite Python 3 (Anaconda recommandé). Toutes le
 ```bash
 pip install -r requirements.txt
 ```
+
+## Liens des kahoots
+
+- [Kahoot Entrainement Graphe - Les base](https://create.kahoot.it/share/ro-base-graphe/56bc7058-12b3-447a-b7aa-34313aa638c7)
