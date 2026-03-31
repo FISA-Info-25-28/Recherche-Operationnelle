@@ -10,6 +10,8 @@ Votre structure **CesiCDP**, déjà implantée dans le domaine de la Mobilité M
 
 **Objectif** : sur un réseau routier, calculer une tournée reliant un sous-ensemble de villes et revenant au point de départ, en **minimisant la durée totale du trajet**.
 
+**Principe de base** : chaque ville a une unique livraison à recevoir (un colis). Quand un véhicule passe dans une ville, il dépose ce colis et repart. La charge du véhicule diminue donc à chaque étape.
+
 ## 3. Contraintes supplémentaires
 
 Le problème de base doit **obligatoirement** intégrer **au moins deux contraintes supplémentaires** : une contrainte temporelle et une contrainte véhicule. Vous pouvez en ajouter d'autres pour enrichir votre modélisation.
@@ -48,14 +50,28 @@ Ces contraintes portent sur les **ressources physiques** : nombre de véhicules,
 - **Équilibrage de charge** : ajouter une contrainte limitant l'écart entre véhicules. Par exemple : la distance totale du véhicule le plus chargé ne doit pas dépasser `alpha` fois celle du moins chargé (avec `alpha` un facteur choisi, ex : 1.5 ou 2.0).
 - **Coûts/restrictions sur les arêtes** : définir une matrice de coûts par type de véhicule, ou une liste d'arêtes interdites pour certains types. Par exemple, `interdit[k][(i,j)] = True` si le véhicule `k` ne peut pas emprunter la route `(i,j)`.
 
-### 3.3 Contraintes libres (optionnelles)
+### 3.3 Contraintes sur les livraisons (optionnelles)
+
+Ces contraintes modifient la nature de ce qui se passe quand un véhicule arrive dans une ville.
+
+| Contrainte | Description | Exemple concret |
+| --- | --- | --- |
+| **Livraisons multiples** | Une ville peut recevoir plusieurs colis distincts, potentiellement par des véhicules différents. | La ville A a 3 commandes : 2 livrées par le camion 1, 1 par le camion 2. |
+| **Pickup and delivery** | Le véhicule ne fait pas que déposer : il collecte aussi des marchandises. La charge varie à la hausse et à la baisse le long de la tournée. | Le camion dépose 10 kg à la ville A, puis récupère 5 kg de retours à la ville B. |
+
+**Comment les modéliser concrètement ?**
+
+- **Livraisons multiples** : chaque ville `i` a une liste de demandes `[d_i1, d_i2, ...]` au lieu d'une seule. Chaque demande peut être assignée à un véhicule différent. Une ville peut donc apparaître dans plusieurs sous-tournées.
+- **Pickup and delivery** : chaque ville `i` a deux valeurs : `livraison_i` (ce qu'on dépose) et `collecte_i` (ce qu'on récupère). La charge du véhicule après la ville `i` vaut : `charge - livraison_i + collecte_i`. La charge ne doit jamais dépasser la capacité du véhicule à aucun point de la tournée.
+
+### 3.4 Contraintes libres (optionnelles)
 
 Vous pouvez proposer vos propres contraintes supplémentaires, **en concertation avec votre tuteur**. Quelques pistes :
 
 - Véhicules hétérogènes (vitesses ou capacités différentes)
 - Points de recharge ou de ravitaillement obligatoires
-- Livraisons avec collecte simultanée (pickup and delivery)
 - Pénalités en cas de retard (soft time windows)
+- Durée maximale de tournée par véhicule
 
 > **Attention aux dépendances** : "Capacités de chargement" et "Équilibrage de charge" nécessitent d'avoir choisi "Multi-véhicules". Elles comptent chacune comme une contrainte à part entière.
 
