@@ -1,4 +1,4 @@
-# Glossaire — Recherche Opérationnelle
+# Glossaire - Recherche Opérationnelle
 
 Ce glossaire regroupe les notions abordées dans les quatre boucles du module de Recherche Opérationnelle (théorie des graphes, complexité, programmation linéaire, métaheuristiques), ainsi que les prérequis des séquences de préparation.
 
