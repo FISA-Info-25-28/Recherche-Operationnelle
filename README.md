@@ -42,3 +42,4 @@ pip install -r requirements.txt
 - [Kahoot Prosit Retour 1 - Théorie des graphes](https://create.kahoot.it/share/ro-pr1/c00a20ca-b4d3-43b0-884e-7c6f48d33637)
 - [Kahoot Prosit Retour 2 - Complexité et Réduction](https://create.kahoot.it/share/ro-pr2/53270ab4-240e-4cf9-8028-8459210c310d)
 - [Kahoot Prosit Retour 3 - Problèmes d'optimisation difficiles](https://create.kahoot.it/share/ro-pr3/621a274d-6a1b-42f2-8b65-0cc54058bd59)
+- [Kahoot Révision Intermédiaire](https://create.kahoot.it/share/ro-revision-intermediaire/e7fb1232-36d5-42c3-b67f-e8ca0b230936)
