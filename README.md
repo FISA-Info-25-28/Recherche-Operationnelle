@@ -1,4 +1,4 @@
-# Bloc Recherche Opérationnelle - A3 2025-2026
+# Bloc Recherche Opérationnelle - A3 2025-2028
 
 Ce dépôt rassemble l'ensemble des ressources du bloc Recherche Opérationnelle. Le bloc dure quatre semaines et tourne autour d'un projet fil rouge pour l'ADEME : optimiser des tournées de véhicules sur un réseau routier. Pour y arriver, on monte progressivement en compétences sur la théorie des graphes, la complexité, la programmation linéaire et les métaheuristiques.
 
