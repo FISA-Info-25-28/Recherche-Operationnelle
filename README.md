@@ -44,3 +44,4 @@ pip install -r requirements.txt
 - [Kahoot Prosit Retour 3 - Problèmes d'optimisation difficiles](https://create.kahoot.it/share/ro-pr3/621a274d-6a1b-42f2-8b65-0cc54058bd59)
 - [Kahoot Prosit Retour 4 - Métaheuristiques](https://create.kahoot.it/share/ro-pr4/8c87d1ff-5221-41e5-a32a-d187cfa0a7ea)
 - [Kahoot Révision Intermédiaire](https://create.kahoot.it/share/ro-revision-intermediaire/e7fb1232-36d5-42c3-b67f-e8ca0b230936)
+- [Kahoot Révision CCTLs](https://create.kahoot.it/share/ro-revision-cctls/edea5f18-c670-4bec-9206-c7a67b936473)
